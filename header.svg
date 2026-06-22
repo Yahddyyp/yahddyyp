@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+  <defs>
+    <style>
+      @keyframes drawText {
+        from { stroke-dashoffset: 100%; }
+        to { stroke-dashoffset: 0%; }
+      }
+      @keyframes fillText {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes slideUp {
+        from { opacity: 0; transform: translateY(12px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes float {
+        0%, 100% { transform: translate(0, 0); }
+        25% { transform: translate(10px, -8px); }
+        50% { transform: translate(-5px, -15px); }
+        75% { transform: translate(-10px, -5px); }
+      }
+      @keyframes dustFloat {
+        0% { transform: translateY(0) translateX(0); opacity: 0; }
+        10% { opacity: 0.5; }
+        80% { opacity: 0.4; }
+        100% { transform: translateY(-320px) translateX(20px); opacity: 0; }
+      }
+      .draw-text {
+        stroke-dasharray: 100%;
+        animation: drawText 1.5s ease forwards;
+      }
+      .fill-text {
+        animation: fillText 0.5s ease forwards 1s;
+      }
+      .fill-user {
+        animation: slideUp 0.5s ease forwards 1.8s;
+      }
+      .fill-tagline {
+        animation: slideUp 0.5s ease forwards 2.3s;
+      }
+    </style>
+    
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cba6f7"/>
+      <stop offset="50%" stop-color="#f5c2e7"/>
+      <stop offset="100%" stop-color="#b4befe"/>
+    </linearGradient>
+    
+    <linearGradient id="overlay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#000" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#1a1a2e" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  
+  <image href="header.webp" x="0" y="0" width="900" height="300" preserveAspectRatio="xMidYMid slice"/>
+  
+  <rect width="900" height="300" fill="url(#overlay)"/>
+  
+  <rect width="900" height="300" fill="#cba6f7" opacity="0.15"/>
+  
+  
+  
+  <text x="450" y="115" text-anchor="middle"
+        font-family="'Hiragino Sans', 'Yu Gothic', 'Noto Sans JP', sans-serif"
+        font-size="72" font-weight="bold" fill="none"
+        stroke="#cba6f7" stroke-width="2"
+        class="draw-text"
+        letter-spacing="6">
+    こんにちは
+  </text>
+  
+  <text x="450" y="115" text-anchor="middle"
+        font-family="'Hiragino Sans', 'Yu Gothic', 'Noto Sans JP', sans-serif"
+        font-size="72" font-weight="bold"
+        fill="url(#titleGrad)" opacity="0"
+        class="fill-text"
+        letter-spacing="6">
+    こんにちは
+  </text>
+  
+  <text x="450" y="160" text-anchor="middle"
+        font-family="'Caskaydia Cove', 'CaskaydiaCove Nerd Font', 'Cascadia Code', monospace"
+        font-size="16" font-weight="bold"
+        fill="#cdd6f4" opacity="0" letter-spacing="5"
+        class="fill-user">
+    yahddyyp
+  </text>
+  
+  <text x="450" y="200" text-anchor="middle"
+        font-family="'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', serif"
+        font-size="16" fill="#b4befe" opacity="0"
+        letter-spacing="4" font-style="italic"
+        class="fill-tagline">
+    にゃあ
+  </text>
+  
+  <g fill="#cba6f7">
+    <circle cx="120" cy="280" r="1.5" style="animation: dustFloat 8s linear infinite;"/>
+    <circle cx="230" cy="320" r="1" style="animation: dustFloat 10s linear infinite 1.5s;"/>
+    <circle cx="350" cy="260" r="1.5" style="animation: dustFloat 7s linear infinite 3s;"/>
+    <circle cx="480" cy="300" r="1" style="animation: dustFloat 9s linear infinite 0.5s;"/>
+    <circle cx="600" cy="270" r="1.5" style="animation: dustFloat 11s linear infinite 2s;"/>
+    <circle cx="720" cy="310" r="1" style="animation: dustFloat 8.5s linear infinite 4s;"/>
+    <circle cx="830" cy="290" r="1.5" style="animation: dustFloat 9.5s linear infinite 1s;"/>
+  </g>
+  <g fill="#b4befe">
+    <circle cx="80" cy="310" r="1" style="animation: dustFloat 7.5s linear infinite 2.5s;"/>
+    <circle cx="300" cy="290" r="1.5" style="animation: dustFloat 10.5s linear infinite 0.8s;"/>
+    <circle cx="550" cy="330" r="1" style="animation: dustFloat 8s linear infinite 3.5s;"/>
+    <circle cx="780" cy="280" r="1" style="animation: dustFloat 9s linear infinite 1.8s;"/>
+  </g>
+</svg>

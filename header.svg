@@ -53,7 +53,7 @@
     </linearGradient>
   </defs>
   
-  <image href="header_bg.jpg" x="0" y="0" width="900" height="300" preserveAspectRatio="xMidYMid slice"/>
+  <image href="https://raw.githubusercontent.com/Yahddyyp/yahddyyp/main/header_bg.jpg" x="0" y="0" width="900" height="300" preserveAspectRatio="xMidYMid slice"/>
   
   <rect width="900" height="300" fill="url(#overlay)"/>
   

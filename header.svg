@@ -55,7 +55,7 @@
   
   
   
-  <text x="440" y="145" text-anchor="middle"
+  <text x="450" y="145" text-anchor="middle"
         font-family="'Hiragino Sans', 'Yu Gothic', 'Noto Sans JP', sans-serif"
         font-size="72" font-weight="bold" fill="none"
         stroke="#cba6f7" stroke-width="2"
@@ -64,7 +64,7 @@
     こんにちは
   </text>
   
-  <text x="440" y="145" text-anchor="middle"
+  <text x="450" y="145" text-anchor="middle"
         font-family="'Hiragino Sans', 'Yu Gothic', 'Noto Sans JP', sans-serif"
         font-size="72" font-weight="bold"
         fill="url(#titleGrad)" opacity="0"

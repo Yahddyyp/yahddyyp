@@ -19,6 +19,12 @@
         80% { opacity: 0.4; }
         100% { transform: translateY(-320px) translateX(20px); opacity: 0; }
       }
+      @font-face {
+        font-family: 'Maple Mono NF';
+        src: url(data:font/woff2;base64,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) format('woff2');
+        font-weight: bold;
+        font-style: normal;
+      }
       .draw-text {
         stroke-dasharray: 100%;
         animation: drawText 1.5s ease forwards;
@@ -74,7 +80,7 @@
   </text>
   
   <text x="450" y="185" text-anchor="middle"
-        font-family="'Caskaydia Cove', 'CaskaydiaCove Nerd Font', 'Cascadia Code', monospace"
+        font-family="'Maple Mono NF', monospace"
         font-size="16" font-weight="bold"
         fill="#cdd6f4" opacity="0" letter-spacing="5"
         class="fill-user">
